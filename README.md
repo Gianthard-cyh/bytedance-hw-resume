@@ -23,3 +23,7 @@
 
 ## 在线预览
 Live Demo: [https://bytedance-hw-resume.netlify.app/](https://bytedance-hw-resume.netlify.app/)
+
+## 性能分析
+使用lighthouse进行性能分析，结果如下：
+![](assets/lighthouse.png)
