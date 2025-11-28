@@ -103,7 +103,7 @@ a:hover {
 }
 
 .content h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   color: #111;
 }
@@ -249,11 +249,11 @@ dd {
 .toggle {
   background: transparent;
   border: none;
-  padding: 0 4px;
+  padding: 0px;
   margin-right: 0.5rem;
   cursor: pointer;
   color: #666;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
 }
 .toggle:hover {
