@@ -43,17 +43,11 @@ export default function App() {
     ],
     openSource: [
       {
-        project: "Vue3 Core",
+        project: "Vue3",
         stars: "49k Stars",
         contributions: [
           "为 Vue3 Vapor 编译器添加静态导入支持 (#13630 @vuejs/core)",
-          "解决 Pinia 全局注入行为不一致问题并促成文档修正 (#11602 @vuejs/core)"
-        ]
-      },
-      {
-        project: "Vue SFC Playground",
-        stars: "Official Tool",
-        contributions: [
+          "解决 Pinia 全局注入行为不一致问题并促成文档修正 (#11602 @vuejs/core)",
           "为 Playground 添加 Custom Element 支持 (#354 @vuejs/repl)"
         ]
       },
@@ -70,7 +64,6 @@ export default function App() {
         name: "“一生一芯”计划",
         role: "学员",
         date: "2023.10 - 至今",
-        desc: "高性能 RISC-V 处理器设计与实现",
         points: [
           "基于框架代码实现了支持 RISCV-32E 指令集的模拟器。",
           "独立设计并实现支持 RISCV-32E 指令集的多周期处理器。",
@@ -79,7 +72,7 @@ export default function App() {
       },
       {
         name: "端侧 LORA 大模型推理优化",
-        role: "校级重点大创 (优秀)",
+        role: "负责人 | 校级重点大创 (优秀)",
         date: "2024.11 - 2025.9",
         points: [
           "调研 PowerInfer, SGLang 等框架，分析异构调度策略与 KV 缓存管理机制。",
@@ -169,15 +162,10 @@ export default function App() {
             </div>
           </header>
 
-          {/* 两栏布局 */}
           <div className="grid grid-cols-12 gap-8">
-            
-            {/* 左侧主要栏 (Experience, Projects, Research) - 占7.5份 */}
             <div className="col-span-12 md:col-span-8 flex flex-col gap-8 border-r-0 md:border-r border-dashed border-gray-300 md:pr-8">
-              
-              {/* 科研成果 - 重点突出 */}
               <section>
-                <SectionTitle title="Research Experience" sub="科研成果" />
+                <SectionTitle title="科研成果" sub="Research Experience" />
                 {data.research.map((item, idx) => (
                   <div key={idx} className="mb-4 group">
                     <div className="flex justify-between items-baseline mb-1">
@@ -199,10 +187,8 @@ export default function App() {
                   </div>
                 ))}
               </section>
-
-              {/* 开源贡献 */}
               <section>
-                <SectionTitle title="Open Source" sub="开源贡献" />
+                <SectionTitle title="开源贡献" sub="Open Source" />
                 <div className="space-y-4">
                   {data.openSource.map((item, idx) => (
                     <div key={idx}>
@@ -219,10 +205,8 @@ export default function App() {
                   ))}
                 </div>
               </section>
-
-              {/* 项目经历 */}
               <section>
-                <SectionTitle title="Projects" sub="项目经历" />
+                <SectionTitle title="项目经历" sub="Projects" />
                 <div className="space-y-5">
                   {data.projects.map((proj, idx) => (
                     <div key={idx}>
@@ -230,8 +214,8 @@ export default function App() {
                         <h3 className="font-bold text-base">{proj.name}</h3>
                         <span className="text-sm font-sans text-gray-500 tabular-nums">{proj.date}</span>
                       </div>
-                      <div className="text-sm italic text-gray-600 mb-2 font-sans">
-                        {proj.role} {proj.desc && `— ${proj.desc}`}
+                      <div className="text-sm text-gray-600 mb-2 font-sans">
+                        {proj.role}
                       </div>
                       <ul className="list-disc list-outside ml-4 space-y-1 text-sm text-gray-800 leading-relaxed marker:text-gray-400">
                         {proj.points.map((pt, i) => (
@@ -242,10 +226,8 @@ export default function App() {
                   ))}
                 </div>
               </section>
-
-              {/* 实习经历 (如果左侧太挤可以移到右侧，但这里放左侧合适) */}
               <section>
-                <SectionTitle title="Professional Experience" sub="实习经历" />
+                <SectionTitle title="实习经历" sub="Professional Experience" />
                 {data.experience.map((exp, idx) => (
                   <div key={idx}>
                     <div className="flex justify-between items-baseline mb-1">
@@ -257,15 +239,12 @@ export default function App() {
                   </div>
                 ))}
               </section>
-
             </div>
-
-            {/* 右侧侧边栏 (Education, Skills, Leadership) - 占4.5份 */}
             <div className="col-span-12 md:col-span-4 flex flex-col gap-8">
               
               {/* 教育背景 */}
-              <section className="bg-[#f2f0eb] p-4 -mx-4 md:mx-0 md:p-0 md:bg-transparent">
-                <SectionTitle title="Education" sub="教育背景" simple />
+              <section className="md:mx-0 md:p-0">
+                <SectionTitle title="教育背景" sub="Education" />
                 <div className="mb-4">
                   <div className="font-bold text-lg">{data.education.school}</div>
                   <div className="text-sm italic mb-2">{data.education.degree}</div>
@@ -289,7 +268,7 @@ export default function App() {
 
               {/* 技术栈 */}
               <section>
-                <SectionTitle title="Technical Skills" sub="技术能力" simple />
+                <SectionTitle title="技术能力" sub="Technical Skills" />
                 <div className="space-y-4">
                    <div>
                      <h4 className="font-bold text-sm mb-1 uppercase tracking-wide text-gray-500 font-sans">Languages</h4>
@@ -314,7 +293,7 @@ export default function App() {
 
                {/* 学生工作 */}
               <section>
-                <SectionTitle title="Leadership" sub="社团/学生工作" simple />
+                <SectionTitle title="社团/学生工作" sub="Leadership" />
                 <div className="space-y-4">
                   {data.leadership.map((item, idx) => (
                     <div key={idx} className="relative">
@@ -337,7 +316,6 @@ export default function App() {
         
         {/* 底部装饰 */}
         <div className="h-4 border-t-2 border-[#2c2c2c] bg-[#f2f0eb] mt-auto flex items-center justify-center text-[10px] uppercase tracking-[0.2em] text-gray-500 font-sans">
-          Resume • Chen Yuheng
         </div>
       </div>
     </div>
@@ -345,9 +323,11 @@ export default function App() {
 }
 
 // 辅助组件：经典标题样式
-const SectionTitle = ({ title, sub, simple = false }) => (
-  <div className={`mb-4 ${simple ? 'pb-1 border-b border-black' : 'pb-2 border-b-2 border-black'} flex items-baseline justify-between`}>
+const SectionTitle = ({ title, sub }: { title: string; sub?: string }) => (
+  <div className="mb-4 pb-2 border-b-2 border-black flex items-baseline justify-between">
     <h2 className="text-lg font-bold uppercase tracking-widest text-black font-sans">{title}</h2>
-    {!simple && <span className="text-xs font-serif italic text-gray-500 hidden sm:inline-block">{sub}</span>}
+    {sub && (
+      <span className="text-xs font-serif italic text-gray-500 hidden sm:inline-block">{sub}</span>
+    )}
   </div>
 );
