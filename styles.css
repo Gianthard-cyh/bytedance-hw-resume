@@ -119,6 +119,7 @@ a:hover {
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: 3fr 2fr;
+    gap: 2rem;
   }
 }
 
@@ -255,8 +256,12 @@ dd {
   font-size: 1.5rem;
   line-height: 1;
 }
-.toggle:hover { color: #111; }
-.hidden { display: none; }
+.toggle:hover {
+  color: #111;
+}
+.hidden {
+  display: none;
+}
 
 @media print {
   body {
@@ -265,7 +270,9 @@ dd {
   .toolbar {
     display: none;
   }
-  .toggle { display: none; }
+  .toggle {
+    display: none;
+  }
   .page {
     margin: 0;
     box-shadow: none;
