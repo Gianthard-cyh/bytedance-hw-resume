@@ -1,13 +1,239 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bytedance-hw-resume</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陈昱衡 · 简历</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <article class="page" aria-label="简历">
+    <div aria-hidden="true"></div>
+
+    <header class="masthead">
+      <h1>陈昱衡</h1>
+      <p></p>
+      <address class="contacts">
+        <span>159-1169-5662</span>
+        <span class="bullet">•</span>
+        <a href="mailto:chenyuheng@seu.edu.cn">chenyuheng@seu.edu.cn</a>
+        <span class="bullet">•</span>
+        <a href="https://github.com/Gianthard-cyh" target="_blank" rel="noreferrer">github.com/Gianthard-cyh</a>
+      </address>
+    </header>
+
+    <main class="content">
+      <div class="grid">
+        <section aria-labelledby="research-title">
+          <div class="section-title">
+            <h2 id="research-title">科研成果</h2>
+            <span class="accent">Research Experience</span>
+          </div>
+          <article class="entry">
+            <div class="meta">
+              <span class="badge">ICLR 2026 (在投)</span>
+              <span class="role">独立第一作者</span>
+            </div>
+            <h3 class="item-title">Reasoning-Preserved Safety Alignment for Large Reasoning Models</h3>
+            <ul>
+              <li>独立完成从研究构思、算法设计、实验验证到论文撰写的全流程工作。</li>
+              <li>提出基于 Fisher 信息矩阵的参数重要性评估方法，设计参数冻结式安全微调框架。</li>
+              <li>实验表明相比全参数微调，所提方法将安全税降低最多 90.96%，显著缓解推理性能退化。</li>
+            </ul>
+          </article>
+
+          <section aria-labelledby="opensource-title">
+            <div class="section-title">
+              <h2 id="opensource-title">开源贡献</h2>
+              <span class="accent">Open Source</span>
+            </div>
+            <article class="stack">
+              <div>
+                <div class="item-head item-head--border">
+                  <span class="project">Vue3</span>
+                  <span class="stars">49k Stars</span>
+                </div>
+                <ul>
+                  <li>为 Vue3 Vapor 编译器添加静态导入支持 (#13630 @vuejs/core)</li>
+                  <li>解决 Pinia 全局注入行为不一致问题并促成文档修正 (#11602 @vuejs/core)</li>
+                  <li>为 Playground 添加 Custom Element 支持 (#354 @vuejs/repl)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="item-head item-head--border">
+                  <span class="project">VueUse</span>
+                  <span class="stars">20.7k Stars</span>
+                </div>
+                <ul>
+                  <li>修复 until API 的内存泄漏问题 (#4039 @vueuse/vueuse)</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section aria-labelledby="projects-title">
+            <div class="section-title">
+              <h2 id="projects-title">项目经历</h2>
+              <span class="accent">Projects</span>
+            </div>
+            <article class="stack">
+              <div>
+                <div class="item-head">
+                  <h3 class="font-bold text-base">“一生一芯”计划</h3>
+                  <time>2023.10 - 至今</time>
+                </div>
+                <p class="muted">学员</p>
+                <ul>
+                  <li>基于框架代码实现了支持 RISCV-32E 指令集的模拟器。</li>
+                  <li>独立设计并实现支持 RISCV-32E 指令集的多周期处理器。</li>
+                  <li>成功向自研处理器上移植 RT-Thread 实时操作系统。</li>
+                </ul>
+              </div>
+              <div>
+                <div class="item-head">
+                  <h3 class="font-bold text-base">端侧 LORA 大模型推理优化</h3>
+                  <time>2024.11 - 2025.9</time>
+                </div>
+                <p class="muted">负责人 | 校级重点大创 (优秀)</p>
+                <ul>
+                  <li>调研 PowerInfer, SGLang 等框架，分析异构调度策略与 KV 缓存管理机制。</li>
+                  <li>探索 KV Cache 差分压缩、面向 LORA 的 RadixTree 等方案。</li>
+                  <li>深入阅读并修改 mllm 源码，添加 LORA 支持。</li>
+                </ul>
+              </div>
+              <div>
+                <div class="item-head">
+                  <h3 class="font-bold text-base">VR 赋能：数字化野生动物保护</h3>
+                  <time>2023.11 - 2024.5</time>
+                </div>
+                <p class="muted">主程序 (国家级优秀)</p>
+                <ul>
+                  <li>基于 Unreal Engine 5 开发，负责核心游戏交互逻辑。</li>
+                  <li>实现 VR 环境中游泳动作的物理模拟与性能优化。</li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section aria-labelledby="experience-title">
+            <div class="section-title">
+              <h2 id="experience-title">实习经历</h2>
+              <span class="accent">Professional Experience</span>
+            </div>
+            <article>
+              <div class="item-head">
+                <h3 class="font-bold text-base">华为南京研究所 | 园区数字平台产品部</h3>
+                <time>2025.7 - 2025.8</time>
+              </div>
+              <p class="muted">实习生</p>
+              <p>参与企业级数字园区平台开发与维护</p>
+            </article>
+          </section>
+        </section>
+
+        <aside aria-label="侧边信息">
+          <section aria-labelledby="edu-title">
+            <div class="section-title">
+              <h2 id="edu-title">教育背景</h2>
+              <span class="accent">Education</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">东南大学</h3>
+              <p class="muted">软件工程专业本科</p>
+              <time class="note">2023.09 - 至今</time>
+              <dl class="stat-list">
+                <div class="pair">
+                  <dt class="text-gray-600">学年 GPA</dt>
+                  <dd class="font-semibold">4.0664 / 4.8</dd>
+                </div>
+                <div class="pair">
+                  <dt class="text-gray-600">平均 GPA</dt>
+                  <dd class="font-semibold">3.8695 / 4.8</dd>
+                </div>
+                <div class="pair">
+                  <dt class="text-gray-600">专业排名</dt>
+                  <dd class="font-semibold">17 / 124 (Top 13.7%)</dd>
+                </div>
+              </dl>
+              <p class="note"><strong>Core Courses: </strong>概率论(99)、Java(99)、C++(96/97)、计组(92)、高级数据结构(93)、数据结构(91)</p>
+            </div>
+          </section>
+
+          <section aria-labelledby="skills-title">
+            <div class="section-title">
+              <h2 id="skills-title">技术能力</h2>
+              <span class="accent">Technical Skills</span>
+            </div>
+            <div class="stack">
+              <div>
+                <h3 class="label">Languages</h3>
+                <p class="left-bar">Python, C++, Java, Go, TypeScript, Verilog</p>
+              </div>
+              <div>
+                <h3 class="label">Frameworks</h3>
+                <p class="left-bar">PyTorch, Vue3, React, Transformers</p>
+              </div>
+              <div>
+                <h3 class="label">Tools</h3>
+                <p class="left-bar">Git, Linux, Docker, UE5, WandB</p>
+              </div>
+            </div>
+          </section>
+
+          <section aria-labelledby="lead-title">
+            <div class="section-title">
+              <h2 id="lead-title">学生工作</h2>
+              <span class="accent">Leadership</span>
+            </div>
+            <article class="stack">
+              <div>
+                <h3 class="font-bold text-sm">东南大学人工智能协会</h3>
+                <div class="meta-line">
+                  <em>会长</em>
+                  <time>2025.9 - 至今</time>
+                </div>
+                <p class="note">主持社团“计算机通识扫盲”主题课程，组织技术分享会。</p>
+              </div>
+              <div>
+                <h3 class="font-bold text-sm">电子学院科协技术部</h3>
+                <div class="meta-line">
+                  <em>干事</em>
+                  <time>2023.9 - 2024.6</time>
+                </div>
+                <p class="note">主讲焊接、嵌入式、PCB设计培训；负责网站维护。</p>
+              </div>
+            </article>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>Resume • Chen Yuheng</small>
+    </footer>
+  </article>
+</body>
+
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.section-title').forEach(function (header) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'toggle';
+      btn.setAttribute('aria-label', '折叠/展开');
+      btn.textContent = '▾';
+      btn.setAttribute('aria-expanded', 'true');
+      var content = header.nextElementSibling;
+      if (!content) return;
+      btn.addEventListener('click', function () {
+        var isHidden = content.classList.toggle('hidden');
+        btn.textContent = isHidden ? '▸' : '▾';
+        btn.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
+      });
+      header.insertBefore(btn, header.firstChild);
+    });
+  });
+</script>
