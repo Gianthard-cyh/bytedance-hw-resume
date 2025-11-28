@@ -145,7 +145,6 @@ export default function App() {
           {/* Masthead (报头) */}
           <header className="border-b-4 border-double border-[#2c2c2c] pb-6 mb-8 text-center">
             <h1 className="text-5xl font-bold tracking-tight mb-3 text-black">{data.basics.name}</h1>
-            <p className="text-lg text-gray-700 mb-4 font-sans">{data.basics.title}</p>
             
             <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-sm font-medium text-gray-800 font-sans tracking-wider">
               <span className="flex items-center gap-1">
